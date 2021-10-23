@@ -1,0 +1,1 @@
+JDK에서 FileReader, BufferedReader 등 IO 클래스에서 사용되는 패턴
