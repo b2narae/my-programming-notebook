@@ -2,7 +2,7 @@ package DesignPattern.SingletonPattern;
 
 /*
 Eager Initialization과 달리, static block을 통해 Exception Handling 가능
- */
+*/
 
 public class SingletonStaticBlockInitialization {
     private static SingletonStaticBlockInitialization instance;
