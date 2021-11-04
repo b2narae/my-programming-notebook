@@ -7,14 +7,14 @@ Lazy Initialization은 single-thread 환경이 보장된 경우에만 사용할 
 (장점) instance 낭비를 막음
 (단점) multi-thread 환경에서의 동기화 작업을 처리하지 못함
  */
-public class SingletonLazyInitialization {
-    private static SingletonLazyInitialization instance;
+public class SingletonLazyInitialization_3 {
+    private static SingletonLazyInitialization_3 instance;
 
-    private SingletonLazyInitialization() {}
+    private SingletonLazyInitialization_3() {}
 
-    public static SingletonLazyInitialization getInstance() {
+    public static SingletonLazyInitialization_3 getInstance() {
         if (instance == null) {
-            instance = new SingletonLazyInitialization();
+            instance = new SingletonLazyInitialization_3();
         }
         return instance;
     }

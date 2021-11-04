@@ -12,14 +12,14 @@ synchronized를 사용하지 않기 때문에 성능 저하 또한 문제 없음
 그러나 Enum으로 구현하는 방식은 많이 쓰이지 않음.
 java.lang.reflect.Constructor라는 놈의 constructor.setAccessible(true)를 하면 break 됨
  */
-public class SingletonBillPugh {
-    private SingletonBillPugh() {}
+public class SingletonBillPugh_6 {
+    private SingletonBillPugh_6() {}
 
     private static class SingletonHelper {
-        private static final SingletonBillPugh INSTANCE = new SingletonBillPugh();
+        private static final SingletonBillPugh_6 INSTANCE = new SingletonBillPugh_6();
     }
 
-    public static SingletonBillPugh getInstance() {
+    public static SingletonBillPugh_6 getInstance() {
         return SingletonHelper.INSTANCE;
     }
 }

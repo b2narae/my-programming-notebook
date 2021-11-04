@@ -7,14 +7,14 @@ get Instance 진입 쓰레드가 하나로 보장되어 멀티 스레드에서�
 method 앞에 synchronized를 붙이면, 그 method를 호출한 객체를 기준으로 lock을 잡음
  */
 
-public class SingletonThreadSafe {
-    private static SingletonThreadSafe instance;
+public class SingletonThreadSafe_4 {
+    private static SingletonThreadSafe_4 instance;
 
-    private SingletonThreadSafe() {}
+    private SingletonThreadSafe_4() {}
 
-    public static synchronized SingletonThreadSafe getInstance() {
+    public static synchronized SingletonThreadSafe_4 getInstance() {
         if (instance == null) {
-            instance = new SingletonThreadSafe();
+            instance = new SingletonThreadSafe_4();
         }
         return instance;
     }
