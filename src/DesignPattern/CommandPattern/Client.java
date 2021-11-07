@@ -8,6 +8,9 @@ public class Client {
         Alarm alarm = new Alarm();
         Command alarmStartCommand = new AlarmStartCommand(alarm);
 
+        // lamp, alarm 등과 같은 다양한 동작을 구현 가능
+        // -> 즉 코드 확장이 용이해짐.
+        // 이는 AlarmStartCommand와 LampOnCommand라는 Command를 만들었기 때문에 가능.
         Button button1 = new Button(lampOnCommand);
         button1.pressed();
 
