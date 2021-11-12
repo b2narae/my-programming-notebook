@@ -2,6 +2,7 @@ package DesignPattern.ObserverPattern;
 
 import java.util.ArrayList;
 
+// Subject가 observers 들을 갖고 있고, observer에게 notify 함.
 public class Company implements Subject {
 
     private ArrayList<Observer> observers;
