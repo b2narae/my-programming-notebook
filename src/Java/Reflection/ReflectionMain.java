@@ -1,6 +1,7 @@
 package Java.Reflection;
 
 import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 
 // https://jg-seo.tistory.com/21
 public class ReflectionMain {
@@ -19,6 +20,16 @@ public class ReflectionMain {
         for (Field f : fields) {
             System.out.println("\t" + f.getName());
         }
+
+        // 3. Method Information
+        Method[] declaredMethods = anyClass.getDeclaredMethods();
+
+        System.out.println("Existed Methods:");
+        for (Method m : declaredMethods) {
+            System.out.println("\t" + m.getName());
+        }
+
+
 
 
 
