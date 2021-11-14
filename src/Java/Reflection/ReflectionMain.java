@@ -1,5 +1,6 @@
 package Java.Reflection;
 
+import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
@@ -29,10 +30,16 @@ public class ReflectionMain {
             System.out.println("\t" + m.getName());
         }
 
+        // 4. Constructor Information
+        Constructor[] constructors = anyClass.getConstructors();
 
+        System.out.println("Existed Constructor: ");
+        for (Constructor c : constructors) {
+            System.out.println("\t" + c.getName() + ", Param Count : " + c.getParameterCount());
+        }
 
-
-
-
+        // 5. Is the Same Class?
+        boolean result = anyClass.isInstance(new String());
+        System.out.println("IsSameClass ? : " + result);
     }
 }
