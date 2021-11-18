@@ -1,6 +1,6 @@
 package Java.Thread;
 
-// refer to : https://coding-factory.tistory.com/279
+// https://coding-factory.tistory.com/279
 
 public class SingleThread2 implements Runnable {
 
