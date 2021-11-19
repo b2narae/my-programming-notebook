@@ -22,7 +22,7 @@ public class SingleThread2 implements Runnable {
             } catch (InterruptedException ie) {
                 ie.printStackTrace();
             }
-            System.out.println("Name of Thread : " + Thread.currentThread().getName());
+            System.out.println("Name : " + Thread.currentThread().getName());
             System.out.println("temp value : " + start);
         }
     }
