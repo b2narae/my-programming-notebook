@@ -9,6 +9,3 @@ echo "You won the game"
 else
 echo "You lost the game"
 fi
-
-echo "Enter your number"
-read n
