@@ -1,7 +1,9 @@
 #!/bin/bash
-
-Rectangle_Area() { #function in bash couldn't be declared with the parameter
-area=$(($1*$2)) #$1 : first parameter, $2 : second parameter
+# command line input 1 2
+Rectangle_Area() {
+area=$(($1 * $2))
 echo "Area is : $area"
 }
+
 Rectangle_Area 10 20
+echo "input1 : $1 / input2 : $2"

@@ -1,11 +1,10 @@
 #!/bin/bash
 function greeting() {
 str="Hello, $name"
-echo $str #no return, but echo
+echo $str
 }
 
 echo "Enter your name"
-read name
-
-val=$(greeting) #greeting function returns value
-echo "Return value of the function is $val"
+read name # This name would be used in greeting()
+return=$(greeting) # function in bracket
+echo "Return value : $return"
