@@ -1,3 +1,0 @@
-- 객체의 결합을 통해 기능을 동적으로 유연하게 확장하는 패턴
-- OCP (Open-Closed Principle)의 대표적인 사례
-- JDK에서 FileReader, BufferedReader 등 IO 클래스에서 사용되는 패턴
