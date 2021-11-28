@@ -25,7 +25,7 @@ public class ReflectionMain {
         // 3. Method Information
         Method[] declaredMethods = anyClass.getDeclaredMethods();
 
-        System.out.println("Existed Methods:");
+        System.out.println("Existing Method:");
         for (Method m : declaredMethods) {
             System.out.println("\t" + m.getName());
         }
@@ -33,7 +33,7 @@ public class ReflectionMain {
         // 4. Constructor Information
         Constructor[] constructors = anyClass.getConstructors();
 
-        System.out.println("Existed Constructor: ");
+        System.out.println("Existing Constructor: ");
         for (Constructor c : constructors) {
             System.out.println("\t" + c.getName() + ", Param Count : " + c.getParameterCount());
         }
