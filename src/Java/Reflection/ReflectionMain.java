@@ -8,7 +8,7 @@ import java.lang.reflect.Method;
 public class ReflectionMain {
     public static void main(String[] args) throws ClassNotFoundException {
 
-        // 1. Method to get a class information
+        // 1. a class information
         Class anyClass = Class.forName("java.lang.String"); // ClassNotFoundException
         Class integerClass1 = int.class;
         Class integerClass2 = Integer.TYPE;
