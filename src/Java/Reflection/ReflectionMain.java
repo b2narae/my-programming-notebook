@@ -38,7 +38,7 @@ public class ReflectionMain {
             System.out.println("\t" + c.getName() + ", Param Count : " + c.getParameterCount());
         }
 
-        // 5. Is the Same Class?
+        // 5. Same Class
         boolean result = anyClass.isInstance(new String());
         System.out.println("IsSameClass ? : " + result);
     }
