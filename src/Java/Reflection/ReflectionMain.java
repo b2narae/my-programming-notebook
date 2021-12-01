@@ -40,6 +40,6 @@ public class ReflectionMain {
 
         // 5. Same Class
         boolean result = anyClass.isInstance(new String());
-        System.out.println("IsSameClass ? : " + result);
+        System.out.println("IsSame ? : " + result);
     }
 }
