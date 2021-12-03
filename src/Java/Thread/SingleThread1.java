@@ -21,7 +21,7 @@ public class SingleThread1 extends Thread {
             } catch (InterruptedException ie) {
                 ie.printStackTrace();
             }
-            System.out.println("Name of Thread : " + currentThread().getName());
+            System.out.println("Thread Name : " + currentThread().getName());
             System.out.println("temp value : " + start);
         }
     }
